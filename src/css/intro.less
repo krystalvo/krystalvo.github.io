@@ -1,0 +1,123 @@
+@import "./colors.less";
+
+.main {
+  transition: all 0.3s ease-in-out;
+}
+
+.banner {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: @black-light1;
+  transition: all 0.3s ease-in-out;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.title {
+  font-family: Gilroy Semibold;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.who {
+  font-family: Melinda;
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-in-out;
+}
+
+.expertise {
+  font-size: 6rem;
+  color: @white;
+}
+
+.dot {
+  font-size: 6rem;
+}
+
+.icon {
+  width: 8%;
+}
+
+.contact-me {
+  font-family: Gilroy Medium;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background: @gradient;
+  color: @black;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease-in-out;
+  .contact-me-text {
+    text-transform: uppercase;
+  }
+  &:hover {
+    background: @black;
+    .contact-me-text {
+      background: @w-gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.title[background1] {
+  position: absolute;
+  bottom: 20%;
+  font-size: 18rem;
+  text-align: center;
+  transform: rotate(-20deg);
+  -webkit-text-fill-color: rgba(0, 0, 0, 0); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 1500px) {
+  .title[background1] {
+    font-size: 16rem;
+  }
+}
+
+@media (max-width: 1350px) {
+  .title[background1] {
+    font-size: 14rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .title[background1] {
+    font-size: 12rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .title[background1] {
+    font-size: 10rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .title[background1] {
+    font-size: 8rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .title[background1] {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .title[background1] {
+    font-size: 3rem;
+  }
+}
