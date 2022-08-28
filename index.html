@@ -16,15 +16,15 @@
     <header id="myHeader">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 text-lg-start text-center">
                     <a class="logo h2" href="index.html">Krystal Vo</a>
                 </div>
-                <div class="col-md-6 menu">
-                    <ul>
-                        <li><a class="h6" href="#home">Home</a></li>
-                        <li><a class="h6" href="#about">About Me</a></li>
-                        <li><a class="h6" href="#portfolio">Portfolio</a></li>
-                        <li><a class="h6" href="#contact">Contact</a></li>
+                <div class="col-md-6 menu d-lg-flex d-none">
+                    <ul class="row">
+                        <li class="col-lg-3 text-center"><a class="h6" href="#home">Home</a></li>
+                        <li class="col-lg-3 text-center"><a class="h6" href="#about">About Me</a></li>
+                        <li class="col-lg-3 text-center"><a class="h6" href="#portfolio">Portfolio</a></li>
+                        <li class="col-lg-3 text-center"><a class="h6" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -33,12 +33,13 @@
     <main class="container-fluid main">
         <section class="banner" id="home">
             <div class="container">
-                <!-- <h1 class="title" background1>DESIGNER</h1> -->
                 <div class="row content">
-                    <div class=" col-md-6 title">
+                    <div class=" col title">
+                        <!-- <img class="background1" src="./src/images/flower1.svg" alt="flower"> -->
                         <h1>
-                            <span class="who">I'm a</span><br />
-                            <span class="expertise">Graphic <br /> Designer <i class="fa fa-flower"></i></span>
+                            <span class="who display-2">I'm a</span><br />
+                            <span class="expertise display-1">Graphic <br /> Designer <i
+                                    class="fa fa-flower"></i></span>
                             <span class="dot">
                                 <img class="icon" src="./src/images/flower.png" alt="dot" />
                             </span>
@@ -53,11 +54,11 @@
         <section class="banner" about id="about">
             <div class="container mb-5">
                 <div class="titleView">
-                    <h1 class="title" aboutMeShadow>About</h1>
-                    <h1 class="title" aboutMe>About Me</h1>
+                    <p class="title titleSectionShadow text-black1" titleSectionShadow>About</p>
+                    <p class="title display-3 titleSection" titleSection>About Me</p>
                 </div>
                 <div class="row align-items-center">
-                    <div class="col-md-6">
+                    <div class="col-md-6 d-flex justify-content-center">
                         <div class="view">
                             <img class="avatar" src="./src/images/avatar.png" alt="avatar" />
                             <div class="backAva">
@@ -68,11 +69,11 @@
                     <div class="col-md-6">
                         <div class="view d-flex flex-column ms-5 mt-5">
                             <h5 class="align-self-start">My name is <span>Krystal Vo</span></h5>
-                            <p>
+                            <p class="content mb-5">
                                 I'm Professional Graphic designer.and I am very passionate and dedicated to my work with
                                 10 years once as a professional graphic de-
                                 signer.I have acquired the skills and knowledge necessary to make
-                                your project a success.i enjoy every step of design process.from.
+                                your project a success.I enjoy every step of design process.from.
                                 discussion and collaboration to concept and execution,but I find the
                                 monition in seeing the finished product do everything for you that it'was created to do.
                             </p>
@@ -98,26 +99,42 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="viewInfo">
+                                <div class="d-flex flex-column align-items-center viewInfoGroup">
+                                    <h4 class="titleInfo">Education</h4>
+                                    <p>Arena Multimedia</p>
+                                </div>
+                            </div>
+                            <div class="viewInfo">
+                                <a href="https://www.facebook.com/">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.facebook.com/">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.facebook.com/">
+                                    <i class="fab fa-pinterest-p"></i>
+                                </a>
+                                <a href="https://www.facebook.com/">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="banner" id="portfolio">
-            <div class="container">
-                <div class="row content">
-                    <div class=" col-md-6 title">
-                        <h1>
-                            <span class="who">I'm a</span><br />
-                            <span class="expertise">Graphic <br /> Designer <i class="fa fa-flower"></i></span>
-                            <span class="dot">
-                                <img class="icon" src="./src/images/flower.png" alt="dot" />
-                            </span>
-                        </h1>
-                        <button type="button" class="contact-me">
-                            <span class="contact-me-text">Contact Me</span>
-                        </button>
-                    </div>
+        <section class="banner" portfolio id="portfolio">
+            <div class="container mb-5">
+                <div class="titleView">
+                    <p class="title titleSectionShadow text-black2" titleSectionShadow>Portfolio</p>
+                    <p class="title display-3 titleSection" titleSection>Portfolio</p>
+                </div>
+                <div class="row experience">
+                    <h3 class="col-md-3 text-center">Logo</h3>
+                    <h3 class="col-md-3 text-center">Branding</h3>
+                    <h3 class="col-md-3 text-center">Motion</h3>
+                    <h3 class="col-md-3 text-center">Video Editing</h3>
                 </div>
             </div>
         </section>

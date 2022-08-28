@@ -12,32 +12,27 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  //   height: 100%;
-  .title[aboutMe] {
+  .title[titleSection] {
     display: flex;
     position: absolute;
     font-family: Gilroy Semibold;
-    font-size: 4rem;
     text-align: center;
     background: @w-gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .title[aboutMeShadow] {
-    font-size: 10rem;
+  .title[titleSectionShadow] {
+    font-size: 8rem;
     text-align: center;
-    color: @black-light1;
-  }
+  }  
 }
 
 .view {
   position: relative;
-  width: 100%;
+  width: 80%;
   display: flex;
   align-items: center;
-  height: 100%;
   color: @white;
-  //   background-color: #fff;
   h5 {
     font-family: Gilroy Medium;
     font-size: 1.5rem;
@@ -75,7 +70,14 @@
   display: flex;
   width: 100%;
   justify-content: space-around;
-  //   background-color: aqua;
+  a {
+      border: 2px solid white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+  }
+  .content{
+    font-family: Gilroy;
+  }
 }
 
 .viewInfoGroup {
@@ -84,7 +86,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  // height: 100%;
   h4 {
     font-family: Gilroy Semibold;
     background: @w-gradient;
@@ -95,4 +97,5 @@
     font-family: Gilroy Light;
     text-align: center;
   }
+  
 }
