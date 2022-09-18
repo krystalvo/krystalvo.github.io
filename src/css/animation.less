@@ -20,6 +20,17 @@
   animation: fade-right 1s ease-in;
 }
 
+/* ENDLESS ROTATE */
+.rotate {
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes fade-bottom {
   0% {
     transform: translateY(50px);
